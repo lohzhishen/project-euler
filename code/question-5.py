@@ -1,7 +1,7 @@
 from functools import reduce
 
 
-def solution():
+def solution() -> int:
     """Returns the smallest positive number that is evenly divisible by all numbers from 1 to 20."""
     return reduce(lcm, range(2, 21), 1)
 
