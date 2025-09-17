@@ -1,4 +1,4 @@
-from collections.abc import Iterable
+from typing import Generator
 
 
 def solution() -> int:
@@ -11,7 +11,7 @@ def solution() -> int:
     return output
 
 
-def fibonacci_sequence() -> Iterable[int]:
+def fibonacci_sequence() -> Generator[int, None, None]:
     """Returns the even-valued terms of the Fibonacci Sequence."""
     a, b = 1, 2
     while True:
